@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="110dp"
+    android:height="110dp"
+    android:viewportWidth="110"
+    android:viewportHeight="110">
+
+    <!-- Nền tròn xanh dương -->
+    <path
+        android:fillColor="#123B6D"
+        android:pathData="M55,0 A55,55 0 1,1 54.9,0 z" />
+
+    <!-- Đầu người (màu trắng) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M55,35 a15,15 0 1,1 -0.1,0 z" />
+
+    <!-- Thân người (màu trắng) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,80 c0,-10 15,-20 35,-20 s35,10 35,20 v10 h-70 z" />
+</vector>

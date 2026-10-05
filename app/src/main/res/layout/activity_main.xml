@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- TIÊU ĐỀ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hồ sơ sinh viên"
+            android:textColor="#123B6D"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Quản lý thông tin học tập "
+            android:textColor="#60748A"
+            android:textSize="14sp" />
+
+
+        <!-- KHỐI HỒ SƠ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- THANH XANH -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#123B6D" />
+
+            <!-- AVATAR -->
+            <ImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-55dp"
+                android:src="@drawable/ic_avatar_blue"
+                android:scaleType="centerInside"/>
+
+
+            <!-- NHÃN -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:background="#E1EFFB"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:text="HỒ SƠ CÁ NHÂN"
+                android:textColor="#123B6D"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <!-- TÊN -->
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="Nguyễn Doãn Vinh Huy"
+                android:textColor="#172B4D"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <!-- MSSV -->
+            <TextView
+                android:id="@+id/tvStudentId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="Mã sinh viên: 23115141122108"
+                android:textColor="#60748A"
+                android:textSize="14sp" />
+
+            <!-- EMAIL -->
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Chưa cập nhật email"
+                android:textColor="#60748A"
+                android:textSize="14sp" />
+
+            <!-- TRẠNG THÁI AVATAR -->
+            <TextView
+                android:id="@+id/tvAvatarStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Chưa chọn ảnh đại diện"
+                android:textColor="#60748A"
+                android:textSize="14sp" />
+
+            <!-- CHỌN ẢNH -->
+            <Button
+                android:id="@+id/btnAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Chọn ảnh đại diện"
+                android:textColor="#123B6D" />
+
+            <!-- CẬP NHẬT -->
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#123B6D"
+                android:text="Cập nhật sinh viên"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+
+        <!-- KẾT QUẢ HỌC TẬP -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="KẾT QUẢ HỌC TẬP"
+            android:textColor="#123B6D"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+
+        <!-- CARD ĐIỂM -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tổng quan điểm số"
+                android:textColor="#172B4D"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- HAI CỘT ĐIỂM -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <!-- GPA HỆ 4 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GPA hệ 4"
+                        android:textColor="#60748A"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvGpa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="2.5 / 4.0"
+                        android:textColor="#123B6D"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <!-- ĐIỂM HỆ 10 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Điểm hệ 10"
+                        android:textColor="#60748A"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvScore10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Chưa tính"
+                        android:textColor="#123B6D"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- NÚT QUY ĐỔI -->
+            <Button
+                android:id="@+id/btnConvert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#123B6D"
+                android:text="Quy đổi điểm"
+                android:textColor="#FFFFFF" />
+
+            <!-- KẾT QUẢ -->
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#123B6D"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <!-- PROGRESS BAR -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>
